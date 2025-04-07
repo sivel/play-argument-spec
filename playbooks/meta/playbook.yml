@@ -1,3 +1,4 @@
+short_description: A shorter description of below
 description: This is a description of a playbook, that may contain multiple plays with multiple play argument specs
 argument_specs:
   debug localhost:
