@@ -1,0 +1,58 @@
+argument_specs:
+  debug localhost:
+    short_description: play for printing a debug message
+    description:
+        - Example play within a collection containing an argspec for printing a debug message
+    author:
+      - sivel (@sivel)
+    attributes: {}
+    options:
+      msg:
+        description: debug message to print
+        type: str
+    examples: |
+      - import_playbook: sivel.play_argspec_poc.playbook
+        vars:
+          msg: 'Custom debug message'
+    return: ~
+
+  ping localhost:
+    short_description: play for pinging localhost with custom data
+    description:
+        - Example play within a collection containing an argspec for pinging localhost with custom data
+    author:
+      - sivel (@sivel)
+    attributes: {}
+    options:
+      data:
+        description: ping data
+        type: str
+        required: true
+    examples: |
+      - import_playbook: sivel.play_argspec_poc.playbook
+        vars:
+          data: PONG
+    return: ~
+
+  set stats:
+    short_diescription: play for setting a custom stat
+    description:
+        - Example play within a collection containing an argspec for setting a custom stat
+    author:
+      - sivel (@sivel)
+    attributes: {}
+    options:
+      stat:
+        description: stat data
+        type: raw
+        required: true
+    examples: |
+      - import_playbook: sivel.play_argspec_poc.playbook
+        vars:
+          stat: this is some custom stat
+    return:
+      stat:
+        description: Custom stat data
+        returned: always
+        type: raw
+        sample: Hello, World!

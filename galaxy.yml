@@ -1,0 +1,11 @@
+namespace: "sivel"
+name: "play_argspec_poc"
+version: "0.0.1"
+readme: "README.md"
+authors:
+    - "sivel <matt@sivel.net>"
+license:
+    - "GPL-3.0-or-later"
+repository: "https://github.com/sivel/play-argument-spec"
+description: Proof of Concept for Play Argument Spec
+manifest:

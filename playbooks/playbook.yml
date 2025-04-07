@@ -1,0 +1,17 @@
+- name: debug localhost
+  gather_facts: false
+  tasks:
+    - debug:
+        msg: '{{ msg|default(omit) }}'
+
+- name: ping localhost
+  gather_facts: false
+  tasks:
+    - ping:
+        data: '{{ data }}'
+
+- name: set stats
+  gather_facts: false
+  tasks:
+    - set_stats:
+        stat: '{{ stat }}'
