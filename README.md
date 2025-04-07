@@ -1,2 +1,2 @@
-# playbook-argument-spec
-Ansible Playbook Argument Spec PoC
+# play-argument-spec
+Ansible Play Argument Spec PoC
