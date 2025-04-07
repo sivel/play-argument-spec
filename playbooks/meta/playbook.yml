@@ -57,6 +57,12 @@ argument_specs:
         description: stat data
         type: raw
         required: true
+    notes:
+      - this play has some notes
+      - they specify whatever
+      - we will also assume that for the majority,
+        play argspecs would be used in collections,
+        this will automatically add requirements
     examples: |
       - import_playbook: sivel.play_argspec_poc.playbook
         vars:
