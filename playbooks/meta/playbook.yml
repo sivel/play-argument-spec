@@ -7,10 +7,6 @@ argument_specs:
         - Example play within a collection containing an argspec for printing a debug message
     author:
       - sivel (@sivel)
-    attributes:
-      gather_facts: none
-      check_mode: full
-      serial: none
     options :
       msg:
         description: debug message to print
@@ -27,10 +23,6 @@ argument_specs:
         - Example play within a collection containing an argspec for pinging localhost with custom data
     author:
       - sivel (@sivel)
-    attributes:
-      gather_facts: none
-      check_mode: full
-      serial: none
     options:
       data:
         description: ping data
@@ -48,10 +40,6 @@ argument_specs:
         - Example play within a collection containing an argspec for setting a custom stat
     author:
       - sivel (@sivel)
-    attributes:
-      gather_facts: none
-      check_mode: full
-      serial: none
     options:
       stat:
         description: stat data
